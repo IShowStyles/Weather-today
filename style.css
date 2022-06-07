@@ -1,0 +1,200 @@
+html {
+     box-sizing: border-box;
+ }
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    outline: transparent;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    min-height: 100%;
+    font-family: 'Lato', sans-serif;
+    background-color: whitesmoke;
+    font-size: 16px;
+    line-height: 135%;
+    color:#FFCB40;
+}
+
+.container{
+    padding: 0 15px;
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+.logo-link__strong{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #1826B0	;
+}
+
+header{
+    background-color: #0776A0;
+    padding: 12px 0;
+    margin-bottom: 120px;
+}
+
+.header-wrapper{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+}
+
+.git-link{
+    color:honeydew;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.logo-link{
+    display: flex;
+    align-items: flex-end;
+    color: #FFBA00;
+    text-transform: uppercase;
+}
+
+.text{
+    font-size: 18px;
+    text-transform:uppercase ;
+    margin-bottom: 5px;
+}
+
+.header-weather{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+select{
+    padding: 5px;
+    width: 200px;
+}
+
+.out{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 325px;
+    padding: 15px 37px 20px 50px;
+    border: 2px solid royalblue;
+    color: royalblue;
+    border-radius: 9px;
+}
+
+.out-inner{
+    display: flex;
+    justify-content: center;
+}
+
+.town-title{
+    color: #FFBA00;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 22px;
+    font-size: 20px;
+    line-height:35px;
+}
+
+.span{
+    color: seagreen;
+    font-weight: 700;
+}
+
+.out > div:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.temperature-inner,
+.wind-inner,
+.humidity-inner,
+.pressure-inner{
+    margin-bottom: 7px;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.temperature,
+.wind,
+.humidity,
+.pressure{
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 82px;
+}
+
+
+.city__weather{
+    font-size: 21px;
+    color: firebrick;
+    font-weight: 700;
+    text-decoration: underline ;
+}
+
+.out{
+    background-color: rgba(192, 192, 192,1);
+    transition: all .3s linear;
+}
+
+.out:hover{
+    background-color: rgba(192, 192, 192,0.7);
+}
+
+.temperature-gen{
+    display: block;
+    text-align: center;
+}
